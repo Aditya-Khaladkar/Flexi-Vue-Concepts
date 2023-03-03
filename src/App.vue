@@ -2,10 +2,12 @@
   <div id="app">
       <nav class="navbar">
         <div class="navbar-brand">Concepts</div>
-        <router-link to="/">Hello</router-link>
-        <router-link to="/list">List</router-link>
-        <router-link to="/watcher">Watcher</router-link>
-        <router-link to="/computed">computed property</router-link>
+
+        <router-link to="/" class="nav-router">Hello</router-link>
+        <router-link to="/list" class="nav-router">List</router-link>
+        <router-link to="/watcher" class="nav-router">Watcher</router-link>
+        <router-link to="/computed" class="nav-router">computed property</router-link>
+        
           <form class="navbar-form">
             <div class="navbar-input">
               <input type="text" placeholder="Search...">
@@ -83,6 +85,11 @@ nav a.router-link-exact-active {
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
+}
+
+.nav-router {
+  padding: 10px;
+  outline: 2px solid #000;
 }
 
 </style>
