@@ -1,13 +1,15 @@
 <template>
   <div>
     <!-- Call components here -->
+    <button-counter></button-counter>
   </div>
 </template>
 
 <script>
+import ButtonCounter from '@/components/ButtonCounter.vue'
 // import components here
   export default {
-    components: { },
+    components: {ButtonCounter },
   }
 </script>
 
